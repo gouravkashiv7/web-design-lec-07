@@ -1,0 +1,62 @@
+/* ============================================================
+   Design tokens
+   Paste this at the TOP of your styles.css, then fill it in.
+   Below :root, use only var(--...). No other px, rem or #.
+   ============================================================ */
+
+:root {
+  /* Type scale: 4–6 sizes. 1rem = 16px. */
+  --font-size-1: 2.5rem;    /* h1, 40px */
+  --font-size-2: 1.75rem;   /* h2, 28px */
+  --font-size-3: /* TODO */;   /* h3, about 20px */
+  --font-size-body: 1rem;   /* body, 16px */
+  --font-size-small: /* TODO */;   /* captions and small print, about 13px */
+
+  --font-family-body: system-ui, sans-serif;
+  --line-height-body: 1.6;
+
+  /* Spacing scale: each step roughly doubles. */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: /* TODO */;
+  --space-5: 32px;
+  --space-6: /* TODO */;
+
+  /* Colours: these four pass 4.5 : 1 on white. Check yours if you change them. */
+  --color-ink: #1B2A41;       /* main text        14.4 : 1 */
+  --color-muted: #4A5568;     /* secondary text    7.5 : 1 */
+  --color-accent: #B45309;    /* links, buttons    5.0 : 1 */
+  --color-line: #E6DFD0;      /* borders (not for text) */
+  --color-surface: #FBF8F2;   /* tinted backgrounds */
+  --color-bg: #FFFFFF;
+}
+
+
+/* Example: how a rule uses tokens. Delete when you've written your own. */
+.card {
+  padding: var(--space-3);
+  border: 1px solid var(--color-line);
+  color: var(--color-ink);
+}
+
+
+/* ---------- For style-guide.html (homework) ----------
+   TODO: give each swatch its colour, and each bar its width.
+
+.swatch {
+  width: var(--space-6);
+  height: var(--space-6);
+  border: 1px solid var(--color-line);
+}
+.swatch-ink     { background: var(--color-ink); }
+.swatch-muted   { background: ...; }
+.swatch-accent  { background: ...; }
+
+.bar {
+  height: var(--space-3);
+  background: var(--color-accent);
+}
+.bar-1 { width: var(--space-1); }
+.bar-2 { width: ...; }
+-------------------------------------------------------- */

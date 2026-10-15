@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Style guide — Site Name</title>
+    <!-- Uses the same stylesheet as every other page, so it shows your REAL tokens -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <h1>Style guide</h1>
+      <p>Every size, space and colour on this site comes from the tokens shown here.</p>
+
+      <section>
+        <h2>Type scale</h2>
+        <!-- TODO: one line per size. Write the token name and size next to each. -->
+        <h1>Heading 1 · --font-size-1 · 40px</h1>
+        <h2>Heading 2 · --font-size-2 · 28px</h2>
+        <h3>Heading 3 · TODO</h3>
+        <p>Body text reads well at this size and line height. · TODO</p>
+        <p><small>Small print and captions · TODO</small></p>
+      </section>
+
+      <section>
+        <h2>Colours</h2>
+        <table>
+          <caption>Colour tokens and their contrast on white</caption>
+          <thead>
+            <tr>
+              <th scope="col">Swatch</th>
+              <th scope="col">Token</th>
+              <th scope="col">Value</th>
+              <th scope="col">Contrast on white</th>
+              <th scope="col">Used for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="swatch swatch-ink"></div></td>
+              <th scope="row"><code>--color-ink</code></th>
+              <td>#1B2A41</td>
+              <td>14.4 : 1</td>
+              <td>Main text</td>
+            </tr>
+            <!-- TODO: one row per colour token. Read each ratio from the DevTools colour picker. -->
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Spacing</h2>
+        <!-- TODO: one bar per spacing token, each as wide as its value -->
+        <p><code>--space-1</code> · 4px</p>
+        <div class="bar bar-1"></div>
+        <p><code>--space-2</code> · 8px</p>
+        <div class="bar bar-2"></div>
+      </section>
+
+      <section>
+        <h2>Components</h2>
+
+        <h3>Button</h3>
+        <!-- TODO: style .button in styles.css using only tokens -->
+        <p><a class="button" href="contact.html">Apply now</a></p>
+
+        <h3>Card</h3>
+        <article class="card">
+          <h4>Admissions open</h4>
+          <p>B.Tech, 2027 batch. Apply before 30 June.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
